@@ -7,7 +7,7 @@ export const ThemeProvider = ({ children }) => {
     return localStorage.getItem("theme") || "light";
   });
 
-  // Apply theme on first load
+
   useEffect(() => {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
