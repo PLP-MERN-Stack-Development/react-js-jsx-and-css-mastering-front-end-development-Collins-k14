@@ -38,31 +38,29 @@ Site URL https://plpnotebook.netlify.app/
 
     │├── Footer.jsx
 
-│ ├── TaskManager.jsx
+    │├── TaskManager.jsx
 
-│ ├── ApiData.jsx
+    │├── ApiData.jsx
 
-│ ├── Button.jsx
+    │├── Button.jsx
 
-│ └── TaskCard.jsx 
+    │└── TaskCard.jsx 
 
-│ └──TaskManager.jsx
+    │└──TaskManager.jsx
 
 │
 ├── context/
 
-│ └── ThemeContext.jsx
+    │└── ThemeContext.jsx
 
-│
-├── pages/
+│├── pages/
 
-│ ├── Home.jsx
+    │├── Home.jsx
 
-│ └── Tasks.jsx
+    │└── Tasks.jsx
 
-│ └── ApiPage.jsx
+    │└── ApiPage.jsx
 
-│
 ├── App.jsx
 
 ├── main.jsx
