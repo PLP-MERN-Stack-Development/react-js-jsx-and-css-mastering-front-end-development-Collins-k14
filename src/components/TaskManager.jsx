@@ -1,7 +1,7 @@
 // TaskManager.jsx
 import React, { useState, useEffect } from 'react';
 import Button from './Button';
-import TaskCard from './TaskCard';
+import TaskCard from './Taskcard';
 
 const useLocalStorageTasks = () => {
   const [tasks, setTasks] = useState(() => {
