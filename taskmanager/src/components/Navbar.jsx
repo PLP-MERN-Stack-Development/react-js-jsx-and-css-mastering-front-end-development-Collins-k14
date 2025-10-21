@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { ThemeContext } from "../context/ThemeContext";
 
 const Navbar = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext); 
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinkClasses = ({ isActive }) =>
@@ -15,7 +17,6 @@ const Navbar = () => {
     <nav className="bg-white dark:bg-gray-800 shadow">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-          {/* Logo / Title */}
           <div className="flex-shrink-0 flex items-center">
             <h1 className="text-xl font-bold text-gray-900 dark:text-gray-100">
               PLP Task Manager
@@ -34,11 +35,12 @@ const Navbar = () => {
               API Data
             </NavLink>
 
+            {/* Theme toggle button */}
             <button
               onClick={toggleTheme}
               className="ml-4 px-3 py-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
             >
-                {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
+              {theme === "light" ? "Dark Mode" : "Light Mode"}
             </button>
           </div>
 
@@ -62,9 +64,6 @@ const Navbar = () => {
           </NavLink>
           <NavLink to="/tasks" className={navLinkClasses} onClick={() => setIsOpen(false)}>
             Tasks
-          </NavLink>
-          <NavLink to="/api" className={navLinkClasses} onClick={() => setIsOpen(false)}>
-            API Data
           </NavLink>
         </div>
       )}
