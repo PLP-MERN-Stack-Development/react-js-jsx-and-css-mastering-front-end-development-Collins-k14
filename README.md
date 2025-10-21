@@ -2,6 +2,7 @@
 
 A simple React-based task manager .  
 The app allows users to create, manage, and persist tasks using localStorage, browse posts from a public API, and switch between light and dark modes using Tailwind CSS.
+Site URL https://plpnotebook.netlify.app/
 
 ---
 
@@ -31,24 +32,40 @@ The app allows users to create, manage, and persist tasks using localStorage, br
 
 ## 📁 Folder Structure
 ├── components/
+
 │ ├── Navbar.jsx
+
 │ ├── Footer.jsx
+
 │ ├── TaskManager.jsx
+
 │ ├── ApiData.jsx
+
 │ ├── Button.jsx
+
 │ └── TaskCard.jsx 
+
 │ └──TaskManager.jsx
+
 │
 ├── context/
+
 │ └── ThemeContext.jsx
+
 │
 ├── pages/
+
 │ ├── Home.jsx
+
 │ └── Tasks.jsx
+
 │ └── ApiPage.jsx
+
 │
 ├── App.jsx
+
 ├── main.jsx
+
 ├── index.css
 
 
