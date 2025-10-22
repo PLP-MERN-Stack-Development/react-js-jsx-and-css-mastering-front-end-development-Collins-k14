@@ -7,6 +7,13 @@ Site URL https://plpnotebook.netlify.app/
 
 ---
 
+---
+Screenshot of the taskmanager
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/608e86ff-323a-4d27-8e91-35d45b9012c0" />
+
+---
+
 ## 🚀 Features
 
 | Feature | Description |
